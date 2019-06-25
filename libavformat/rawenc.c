@@ -234,7 +234,7 @@ AVOutputFormat ff_mpeg1video_muxer = {
 
 #if CONFIG_MPEG2VIDEO_MUXER
 AVOutputFormat ff_mpeg2video_muxer = {
-    .name              = "mpeg2video",
+    .name              = "XDCAMHD422",
     .long_name         = NULL_IF_CONFIG_SMALL("raw MPEG-2 video"),
     .extensions        = "m2v",
     .audio_codec       = CODEC_ID_NONE,

@@ -5081,7 +5081,7 @@ static int opt_target(const char *opt, const char *arg)
         mux_preload= (36000+3*1200) / 90000.0; //0.44
     } else if(!strcmp(arg, "svcd")) {
 
-        opt_codec("vcodec", "mpeg2video");
+        opt_codec("vcodec", "XDCAMHD422");
         opt_codec("acodec", "mp2");
         opt_format("f", "svcd");
 
@@ -5102,7 +5102,7 @@ static int opt_target(const char *opt, const char *arg)
         opt_default("packetsize", "2324");
 
     } else if(!strcmp(arg, "dvd")) {
-        opt_codec("vcodec", "mpeg2video");
+        opt_codec("vcodec", "XDCAMHD422");
         opt_codec("acodec", "ac3");
 
         frame_rate = frame_rate_tab[norm];
@@ -5151,7 +5151,7 @@ static int opt_target(const char *opt, const char *arg)
             ffmpeg_exit(1);
         }
 
-        opt_codec("vcodec", "mpeg2video");
+        opt_codec("vcodec", "XDCAMHD422");
         opt_codec("acodec", "pcm_s16le");
         opt_default("flags2", "+ivlc+non_linear_q");
         opt_default("flags", "+ildct+low_delay");
@@ -5200,7 +5200,7 @@ static int opt_target(const char *opt, const char *arg)
 
         audio_sample_rate = 48000;
     } else if(!strcmp(arg, "xdcamhd422")) {
-        opt_codec("vcodec", "mpeg2video");
+        opt_codec("vcodec", "XDCAMHD422");
         opt_codec("acodec", "pcm_s16le");
         opt_default("flags2", "+ivlc+non_linear_q");
         opt_default("bf", "2");

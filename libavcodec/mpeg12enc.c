@@ -1012,7 +1012,7 @@ AVCodec ff_mpeg1video_encoder = {
 };
 
 AVCodec ff_mpeg2video_encoder = {
-    "mpeg2video",
+    "XDCAMHD422",
     AVMEDIA_TYPE_VIDEO,
     CODEC_ID_MPEG2VIDEO,
     sizeof(MpegEncContext),
